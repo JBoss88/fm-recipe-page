@@ -1,0 +1,122 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  display: flex;
+  justify-content: center;
+  font-family: sans-serif;
+  background-color: #fff4e6;
+}
+
+li {
+  list-style-position: inside;
+}
+
+body {
+  display: grid;
+  grid-template-rows: auto auto auto auto auto;
+  gap: 2rem;
+  width: 60rem;
+  background-color: #fff;
+  padding: 4rem;
+  border-radius: 1rem;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+img {
+  height: 21.7rem;
+  width: 38.7rem;
+  border-radius: 1rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: #884b09;
+  margin-bottom: 2rem;
+}
+
+h3 {
+  font-size: 2rem;
+  color: #862e9c;
+}
+
+li {
+  margin-top: 1rem;
+}
+
+p,
+li {
+  font-size: 1.3rem;
+  color: #495057;
+}
+
+strong {
+  color: #343a40;
+}
+
+header div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.prep {
+  background-color: #f8f0fc;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.prep li::marker {
+  color: #862e9c;
+}
+
+.ingredients,
+.instructions {
+  border-bottom: 2px solid #dce0dd;
+}
+
+.ingredients li::marker,
+.instructions li::marker {
+  color: #884b09;
+  font-weight: bold;
+}
+
+.last {
+  padding-bottom: 3rem;
+}
+
+.nutrition-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.nutrition-content div p:last-child {
+  color: #884b09;
+  font-weight: bold;
+}
+
+.nutrition-content div {
+  display: flex;
+  border-bottom: 2px solid #dce0dd;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+.nutrition-text {
+  font-weight: bold;
+  padding-bottom: 2rem;
+}
